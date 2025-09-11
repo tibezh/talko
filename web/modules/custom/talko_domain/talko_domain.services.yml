@@ -1,0 +1,6 @@
+services:
+  talko_domain.twig_extension:
+    class: Drupal\talko_domain\TwigExtension\DomainTwigExtension
+    arguments: ['@domain.negotiator']
+    tags:
+      - { name: twig.extension }

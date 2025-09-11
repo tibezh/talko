@@ -1,0 +1,7 @@
+name: "Talko Domain"
+type: module
+description: "Provides domain configuration for Talko."
+package: Custom
+core_version_requirement: ^11
+dependencies:
+  - domain:domain
