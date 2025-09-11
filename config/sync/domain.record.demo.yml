@@ -1,0 +1,11 @@
+uuid: 88e62add-7e29-4aba-97a6-35e4e73d3c05
+langcode: uk
+status: true
+dependencies: {  }
+id: demo
+domain_id: 16356618
+hostname: demo.talko.ddev.site
+name: Demo
+scheme: https
+weight: 2
+is_default: false

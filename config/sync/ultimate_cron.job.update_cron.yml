@@ -1,0 +1,17 @@
+uuid: 63cd4a2b-84bd-4c74-9a2c-c408f8b79e91
+langcode: uk
+status: true
+dependencies:
+  module:
+    - update
+title: 'Перевіряти наявність оновлень'
+id: update_cron
+weight: 0
+module: update
+callback: 'update#cron'
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

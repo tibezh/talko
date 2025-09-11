@@ -1,0 +1,9 @@
+uuid: ee8fbba2-a977-43a9-8179-cbbe8044772b
+langcode: uk
+status: true
+dependencies: {  }
+id: administrator
+label: Administrator
+description: 'Dashboard for administrator.'
+layout: {  }
+weight: 0

@@ -1,0 +1,13 @@
+uuid: ee2fb5ca-c24a-493b-80cd-99e4409cd56f
+langcode: uk
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: 1TFiplNN7Wmj_DtVLLLP-NLPYpZJdAswKY-vTrYgFyo
+id: user.register
+label: Реєстрація
+description: null
+targetEntityType: user
+cache: true

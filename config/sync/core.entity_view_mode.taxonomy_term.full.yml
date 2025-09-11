@@ -1,0 +1,13 @@
+uuid: 0e1ce046-0fad-4fe6-b24b-ab674f7cef21
+langcode: uk
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: iukUENpf8CFvjZbGGacKX_Ges0-lU9z6zvsd32P6kbo
+id: taxonomy_term.full
+label: 'Сторінка терміна таксономії'
+description: ''
+targetEntityType: taxonomy_term
+cache: true

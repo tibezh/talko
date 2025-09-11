@@ -1,0 +1,15 @@
+uuid: 9883b513-afb6-4f32-a299-229e69039b3b
+langcode: uk
+status: true
+dependencies:
+  config:
+    - domain.record.demo
+  module:
+    - domain_access
+id: domain_access_add_action_demo
+label: 'Add selected content to the Demo domain'
+type: node
+plugin: domain_access_add_action
+configuration:
+  domain_id:
+    - demo

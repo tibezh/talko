@@ -1,0 +1,18 @@
+uuid: 40a81d03-b006-4ef7-946a-f87a1e9efb51
+langcode: uk
+status: true
+dependencies:
+  module:
+    - type_tray
+third_party_settings:
+  type_tray:
+    existing_nodes_link_text: 'View existing <em class="placeholder">Стаття</em> content'
+_core:
+  default_config_hash: Fe3N1uqaAyyKJbVkqT-btXy3t98puW8GCRD822xjl10
+name: Стаття
+type: article
+description: '<em>Статті</em> використовуються для чутливих до дати публікації матеріалів на зразок новин, пресрелізів чи дописів до блоґу.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

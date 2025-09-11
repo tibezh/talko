@@ -1,0 +1,17 @@
+uuid: 9d72ea20-7bcc-49f7-a0ec-8b2773f861d4
+langcode: uk
+status: true
+dependencies:
+  module:
+    - locale
+title: 'Оновити переклади'
+id: locale_cron
+weight: 0
+module: locale
+callback: 'locale#cron'
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

@@ -1,0 +1,14 @@
+uuid: 931acd31-e996-4107-9e43-66ff5fb9f03a
+langcode: uk
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: k3aUaZXGDuhkek2TZIee0PApOPTvYZLadziekdyHA5A
+id: user_search
+label: Користувачі
+path: user
+weight: 0
+plugin: user_search
+configuration: {  }

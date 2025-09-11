@@ -1,0 +1,14 @@
+uuid: 3ffa0845-9428-45e8-ab9a-da448b2586c2
+langcode: uk
+status: true
+dependencies:
+  module:
+    - help
+_core:
+  default_config_hash: RZ-bcSekNSsAbIPLW7Gmyd3uUjIOSrPvnb8RCCZYJm8
+id: help_search
+label: Довідка
+path: help
+weight: 0
+plugin: help_search
+configuration: {  }
