@@ -1,0 +1,15 @@
+uuid: e119449d-39fc-4c29-a994-65e6ce7812b6
+langcode: uk
+status: true
+dependencies: {  }
+id: talko_structure
+name: 'Talko Structure'
+data:
+  root_name: talko_structure
+  readable_name: 'Talko Structure'
+  hook_implementation_type: oo_legacy
+  short_description: 'Contains functionality of teams structure.'
+  module_package: ''
+  module_dependencies: {  }
+location:
+  location_type: standard

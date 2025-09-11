@@ -1,0 +1,14 @@
+uuid: c39a99cb-b07a-4c6b-99ca-99e55b7eb3f7
+langcode: uk
+status: true
+dependencies:
+  config:
+    - user.role.domain_admin
+  module:
+    - user
+id: user_remove_role_action.domain_admin
+label: 'Вилучити роль Адміністратор домену у вибраних користувачів'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: domain_admin

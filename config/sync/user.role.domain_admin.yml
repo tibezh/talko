@@ -1,0 +1,9 @@
+uuid: def5cb67-552e-421e-8502-02e9371c4edf
+langcode: uk
+status: true
+dependencies: {  }
+id: domain_admin
+label: 'Адміністратор домену'
+weight: -7
+is_admin: false
+permissions: {  }

@@ -1,0 +1,25 @@
+uuid: ca30e8c3-1a80-4080-9919-4d9f6b127ffc
+langcode: uk
+status: true
+dependencies: {  }
+id: talko_domain
+name: 'Talko Domain'
+data:
+  base: module
+  root_name: talko_domain
+  readable_name: 'Talko Domain'
+  hook_implementation_type: oo_legacy
+  short_description: 'Provides domain configuration for Talko.'
+  module_package: Custom
+  module_dependencies:
+    - 'domain:domain'
+  services:
+    -
+      service_name: twig_extension
+      injected_services:
+        - domain.negotiator
+        - domain.negotiator
+      plain_class_name: DomainTwigExtension
+      relative_namespace: TwigExtension
+location:
+  location_type: standard

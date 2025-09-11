@@ -25,6 +25,7 @@ module:
   domain_config_ui: 0
   domain_content: 0
   dynamic_page_cache: 0
+  easy_breadcrumb: 0
   eca: 0
   eca_access: 0
   eca_base: 0
@@ -66,6 +67,7 @@ module:
   menu_link_content: 0
   menu_ui: 0
   modeler_api: 0
+  module_builder: 0
   mysql: 0
   node: 0
   options: 0

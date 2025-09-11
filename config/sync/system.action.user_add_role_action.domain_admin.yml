@@ -1,0 +1,14 @@
+uuid: 18af8ee0-fa8a-4a84-8224-60ca5a1ca151
+langcode: uk
+status: true
+dependencies:
+  config:
+    - user.role.domain_admin
+  module:
+    - user
+id: user_add_role_action.domain_admin
+label: 'Додати роль Адміністратор домену до вибраних користувачів'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: domain_admin
