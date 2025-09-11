@@ -33,6 +33,7 @@
         "drupal/gin_type_tray": "^1.0",
         "drupal/inline_entity_form": "^3.0@RC",
         "drupal/layout_builder_modal": "^2.0",
+        "drupal/mail_login": "^4.2",
         "drupal/pathauto": "^1.13",
         "drupal/queue_ui": "^3.2",
         "drupal/r4032login": "^2.2",

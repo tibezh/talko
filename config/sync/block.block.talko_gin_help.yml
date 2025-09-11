@@ -1,0 +1,22 @@
+uuid: 973794cd-e753-4618-b723-bc1ca14a6e43
+langcode: uk
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - talko_gin
+_core:
+  default_config_hash: 8nOAry2oKqJOr0zbrlJ3sZHDFJLIO6j-0vT0K_TYca4
+id: talko_gin_help
+theme: talko_gin
+region: help
+weight: -4
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Довідка
+  label_display: '0'
+  provider: help
+visibility: {  }

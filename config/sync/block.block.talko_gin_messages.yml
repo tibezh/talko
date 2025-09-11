@@ -1,0 +1,22 @@
+uuid: 0e400b57-a592-4325-958f-d250508fb1d1
+langcode: uk
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - talko_gin
+_core:
+  default_config_hash: WvPhI8OwllG0gE69-F8qL3ai3nd5SbYD6JpmEuZcyok
+id: talko_gin_messages
+theme: talko_gin
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Повідомлення про стан'
+  label_display: '0'
+  provider: system
+visibility: {  }

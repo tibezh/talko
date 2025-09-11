@@ -1,0 +1,20 @@
+uuid: 7cffd6e9-b8db-4022-aef8-309e78f017da
+langcode: uk
+status: true
+dependencies:
+  theme:
+    - talko_gin
+_core:
+  default_config_hash: HLQY2xgby8K3vN_98hiOSasOhm9pdCsH234-s0duJ8Q
+id: talko_gin_page_title
+theme: talko_gin
+region: header
+weight: -3
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Заголовок сторінки'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -46,6 +46,7 @@ module:
   layout_discovery: 0
   link: 0
   locale: 0
+  mail_login: 0
   menu_link_content: 0
   menu_ui: 0
   mysql: 0
@@ -74,4 +75,5 @@ module:
 theme:
   claro: 0
   gin: 0
+  talko_gin: 0
 profile: standard

@@ -1,0 +1,22 @@
+uuid: 15f496d1-3a26-4ef7-a1ac-64ad01806b12
+langcode: uk
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - talko_gin
+_core:
+  default_config_hash: hBHXB7hC05XU7pDYzETt-GUcpFlogK1gkjyAsg0Ym58
+id: talko_gin_content
+theme: talko_gin
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Основний вміст сторінки'
+  label_display: '0'
+  provider: system
+visibility: {  }

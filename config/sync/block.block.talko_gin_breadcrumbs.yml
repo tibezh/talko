@@ -1,0 +1,22 @@
+uuid: 775e8c99-14ad-4882-9d93-407aa04be177
+langcode: uk
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - talko_gin
+_core:
+  default_config_hash: y9X3xgCsO59pQyzNLzY1D3SDJJxCHILLWkpPnmuTJ2E
+id: talko_gin_breadcrumbs
+theme: talko_gin
+region: breadcrumb
+weight: -5
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Рядки навіґації'
+  label_display: '0'
+  provider: system
+visibility: {  }

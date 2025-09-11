@@ -1,0 +1,20 @@
+uuid: d2ad75ed-b83e-4416-a3a6-e2c0b16ef3c4
+langcode: uk
+status: true
+dependencies:
+  theme:
+    - talko_gin
+_core:
+  default_config_hash: OQ9aJ-4qVwK1x00o9EOYK4eFDjQr_HLpbPiJaPSVZiQ
+id: talko_gin_local_actions
+theme: talko_gin
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Основні адміністративні дії'
+  label_display: '0'
+  provider: core
+visibility: {  }

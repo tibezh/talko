@@ -1,0 +1,22 @@
+uuid: 448cc218-3369-4604-80cb-0531e131c8b8
+langcode: uk
+status: true
+dependencies:
+  theme:
+    - talko_gin
+_core:
+  default_config_hash: BCWhood0xXFQYqxFgL1spXdb9KeIuXH1YvTdjIEedDg
+id: talko_gin_secondary_local_tasks
+theme: talko_gin
+region: pre_content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Другорядні вкладки'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }
