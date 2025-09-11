@@ -1,0 +1,36 @@
+uuid: 1ba06e4d-414e-4f01-b69e-d727276a1279
+langcode: uk
+status: true
+dependencies:
+  module:
+    - eca_form
+    - modeler_api
+third_party_settings:
+  modeler_api:
+    modeler_id: bpmn_io
+    data: 'hash:bc6ca7c47239b1076079c978b1ee76c8'
+    label: 'User Reset Pass redirect to LogIn'
+id: process_qtpjcmn
+weight: 0
+events:
+  form__form_submit_1_1:
+    plugin: 'form:form_submit'
+    label: 'Submit form'
+    configuration:
+      form_ids: user_pass
+      entity_type_id: ''
+      bundle: ''
+      operation: ''
+    successors:
+      -
+        id: eca_form_state_set_redirect_0w197od
+        condition: ''
+conditions: {  }
+gateways: {  }
+actions:
+  eca_form_state_set_redirect_0w197od:
+    label: 'Form state: set redirect'
+    plugin: eca_form_state_set_redirect
+    configuration:
+      destination: /user/login
+    successors: {  }

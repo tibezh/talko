@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.page.body
     - field.field.node.page.field_domain_access
     - field.field.node.page.field_domain_all_affiliates
-    - field.field.node.page.field_domain_source
     - node.type.page
   module:
     - field_layout
@@ -53,12 +52,6 @@ content:
     region: content
     settings:
       display_label: true
-    third_party_settings: {  }
-  field_domain_source:
-    type: options_select
-    weight: 42
-    region: content
-    settings: {  }
     third_party_settings: {  }
   langcode:
     type: language_select
