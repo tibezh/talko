@@ -1,0 +1,9 @@
+uuid: 34103beb-9cff-4826-838c-c9444ec4585e
+langcode: uk
+status: true
+dependencies: {  }
+id: demo_domain_user
+label: 'Demo domain user'
+weight: 0
+is_admin: false
+permissions: {  }

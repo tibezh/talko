@@ -1,0 +1,14 @@
+uuid: e5c8af7e-6a1c-4eb3-be2d-e4f51c34e920
+langcode: uk
+status: true
+dependencies:
+  config:
+    - user.role.demo_domain_user
+  module:
+    - user
+id: user_add_role_action.demo_domain_user
+label: 'Додати роль Demo domain user до вибраних користувачів'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: demo_domain_user

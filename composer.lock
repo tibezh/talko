@@ -2275,17 +2275,17 @@
         },
         {
             "name": "drupal/eca",
-            "version": "3.0.3",
+            "version": "3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/eca.git",
-                "reference": "3.0.3"
+                "reference": "3.0.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/eca-3.0.3.zip",
-                "reference": "3.0.3",
-                "shasum": "764d9ce999cced47e6c3e774aafd1cd96d2b2956"
+                "url": "https://ftp.drupal.org/files/projects/eca-3.0.4.zip",
+                "reference": "3.0.4",
+                "shasum": "23e41742e5e04cf24d497767888be1f23a983e2f"
             },
             "require": {
                 "dragonmantank/cron-expression": "^3.1",
@@ -2311,8 +2311,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.3",
-                    "datestamp": "1757505170",
+                    "version": "3.0.4",
+                    "datestamp": "1758633703",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2972,17 +2972,17 @@
         },
         {
             "name": "drupal/modeler_api",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/modeler_api.git",
-                "reference": "1.0.2"
+                "reference": "1.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/modeler_api-1.0.2.zip",
-                "reference": "1.0.2",
-                "shasum": "852decdaf28b463381dc1f2973490f148372b48a"
+                "url": "https://ftp.drupal.org/files/projects/modeler_api-1.0.3.zip",
+                "reference": "1.0.3",
+                "shasum": "a0239640175c715506336aa0fa9ea763b476acfc"
             },
             "require": {
                 "drupal/core": "^10.4 || ^11"
@@ -2990,8 +2990,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.0.2",
-                    "datestamp": "1755009470",
+                    "version": "1.0.3",
+                    "datestamp": "1758712784",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"

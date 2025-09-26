@@ -1,0 +1,14 @@
+uuid: c8e0a93f-a591-4aa3-91a7-bd34207bc8e7
+langcode: uk
+status: true
+dependencies:
+  config:
+    - user.role.demo_domain_user
+  module:
+    - user
+id: user_remove_role_action.demo_domain_user
+label: 'Вилучити роль Demo domain user у вибраних користувачів'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: demo_domain_user
