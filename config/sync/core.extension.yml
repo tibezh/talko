@@ -17,12 +17,6 @@ module:
   dashboard: 0
   datetime: 0
   dblog: 0
-  domain: 0
-  domain_access: 0
-  domain_alias: 0
-  domain_config: 0
-  domain_config_ui: 0
-  domain_content: 0
   dynamic_page_cache: 0
   easy_breadcrumb: 0
   eca: 0
@@ -81,7 +75,7 @@ module:
   shortcut: 0
   standard: 0
   system: 0
-  talko_domain: 0
+  talko_custom: 0
   taxonomy: 0
   text: 0
   token: 0

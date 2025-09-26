@@ -1,0 +1,5 @@
+name: "Talko Custom"
+type: module
+description: "Contains custom functionality."
+package: Custom
+core_version_requirement: ^11

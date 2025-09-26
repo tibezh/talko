@@ -1,0 +1,60 @@
+uuid: 27950c7f-7443-4f36-a5f4-1be5c5b49886
+langcode: uk
+status: true
+dependencies:
+  module:
+    - eca_base
+    - eca_form
+    - eca_user
+    - modeler_api
+third_party_settings:
+  modeler_api:
+    modeler_id: bpmn_io
+    data: 'hash:bc48312b9722695fed583cc29adabdb4'
+    label: 'Form submit321'
+    colors:
+      form__form_validate_1:
+        fill: '#bbdefb'
+        stroke: '#0d4372'
+id: process_jgkqdws
+weight: 0
+events:
+  form__form_validate_1:
+    plugin: 'form:form_validate'
+    label: 'Validate form'
+    configuration:
+      form_ids: user_login_form
+      entity_type_id: ''
+      bundle: ''
+      operation: ''
+    successors:
+      -
+        id: eca_error_message_0s7z8ey
+        condition: ''
+  user__login_1:
+    plugin: 'user:login'
+    label: 'Login of a user'
+    configuration: {  }
+    successors:
+      -
+        id: eca_warning_message_09r5ky2
+        condition: ''
+conditions: {  }
+gateways: {  }
+actions:
+  eca_error_message_0s7z8ey:
+    label: 'Display an error message to the user'
+    plugin: eca_error_message
+    configuration:
+      message: |-
+        ivan.tbz.h@gmail.com[current_form:id]
+        Error is here!@!@!@
+      replace_tokens: true
+    successors: {  }
+  eca_warning_message_09r5ky2:
+    label: 'Display a warning message to the user'
+    plugin: eca_warning_message
+    configuration:
+      message: 'Username is: [account:name] 123'
+      replace_tokens: true
+    successors: {  }

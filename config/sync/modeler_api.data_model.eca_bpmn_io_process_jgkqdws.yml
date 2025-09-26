@@ -1,0 +1,110 @@
+uuid: 18c572f7-59f3-4cb5-b260-98c2d2025a94
+langcode: uk
+status: true
+dependencies: {  }
+id: eca_bpmn_io_process_jgkqdws
+data: |
+  <?xml version="1.0" encoding="UTF-8"?>
+  <bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0" xmlns:qa="http://some-company/schema/bpmn/qa" id="sample-diagram" targetNamespace="http://bpmn.io/schema/bpmn" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
+    <bpmn2:process id="Process_jgkqdWS" name="Form submit321" isExecutable="true" camunda:versionTag="">
+      <bpmn2:documentation />
+      <bpmn2:extensionElements>
+        <camunda:properties>
+          <camunda:property name="Tags" value="" />
+          <camunda:property name="Changelog" value="" />
+        </camunda:properties>
+      </bpmn2:extensionElements>
+      <bpmn2:startEvent id="form__form_validate_1" name="Validate form" camunda:modelerTemplate="org.drupal.event.form:form_validate">
+        <bpmn2:extensionElements>
+          <camunda:field name="form_ids">
+            <camunda:string>user_login_form</camunda:string>
+          </camunda:field>
+          <camunda:field name="entity_type_id">
+            <camunda:string></camunda:string>
+          </camunda:field>
+          <camunda:field name="bundle">
+            <camunda:string></camunda:string>
+          </camunda:field>
+          <camunda:field name="operation">
+            <camunda:string></camunda:string>
+          </camunda:field>
+          <camunda:properties>
+            <camunda:property name="pluginid" value="form:form_validate" />
+          </camunda:properties>
+        </bpmn2:extensionElements>
+        <bpmn2:outgoing>Flow_1n67cv1</bpmn2:outgoing>
+      </bpmn2:startEvent>
+      <bpmn2:task id="eca_error_message_0s7z8ey" name="Display an error message to the user" camunda:modelerTemplate="org.drupal.action.eca_error_message">
+        <bpmn2:extensionElements>
+          <camunda:field name="message">
+            <camunda:string>ivan.tbz.h@gmail.com[current_form:id]
+  Error is here!@!@!@
+  </camunda:string>
+          </camunda:field>
+          <camunda:field name="replace_tokens">
+            <camunda:string>yes</camunda:string>
+          </camunda:field>
+          <camunda:properties>
+            <camunda:property name="pluginid" value="eca_error_message" />
+          </camunda:properties>
+        </bpmn2:extensionElements>
+        <bpmn2:incoming>Flow_1n67cv1</bpmn2:incoming>
+      </bpmn2:task>
+      <bpmn2:sequenceFlow id="Flow_1n67cv1" sourceRef="form__form_validate_1" targetRef="eca_error_message_0s7z8ey" />
+      <bpmn2:startEvent id="user__login_1" name="Login of a user" camunda:modelerTemplate="org.drupal.event.user:login">
+        <bpmn2:extensionElements>
+          <camunda:properties>
+            <camunda:property name="pluginid" value="user:login" />
+          </camunda:properties>
+        </bpmn2:extensionElements>
+        <bpmn2:outgoing>Flow_1m5kiwr</bpmn2:outgoing>
+      </bpmn2:startEvent>
+      <bpmn2:task id="eca_warning_message_09r5ky2" name="Display a warning message to the user" camunda:modelerTemplate="org.drupal.action.eca_warning_message">
+        <bpmn2:extensionElements>
+          <camunda:field name="message">
+            <camunda:string>Username is: [account:name] 123</camunda:string>
+          </camunda:field>
+          <camunda:field name="replace_tokens">
+            <camunda:string>yes</camunda:string>
+          </camunda:field>
+          <camunda:properties>
+            <camunda:property name="pluginid" value="eca_warning_message" />
+          </camunda:properties>
+        </bpmn2:extensionElements>
+        <bpmn2:incoming>Flow_1m5kiwr</bpmn2:incoming>
+      </bpmn2:task>
+      <bpmn2:sequenceFlow id="Flow_1m5kiwr" sourceRef="user__login_1" targetRef="eca_warning_message_09r5ky2" />
+    </bpmn2:process>
+    <bpmndi:BPMNDiagram id="BPMNDiagram_Process_jgkqdWS">
+      <bpmndi:BPMNPlane id="BPMNPlane_Process_jgkqdWS" bpmnElement="Process_jgkqdWS">
+        <bpmndi:BPMNShape id="Event_1jafoz2_di" bpmnElement="form__form_validate_1" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#0d4372">
+          <dc:Bounds x="-98" y="132" width="36" height="36" />
+          <bpmndi:BPMNLabel>
+            <dc:Bounds x="-112" y="175" width="64" height="14" />
+          </bpmndi:BPMNLabel>
+        </bpmndi:BPMNShape>
+        <bpmndi:BPMNShape id="Event_0xcpvhl_di" bpmnElement="user__login_1">
+          <dc:Bounds x="-98" y="-178" width="36" height="36" />
+          <bpmndi:BPMNLabel>
+            <dc:Bounds x="-117" y="-135" width="74" height="14" />
+          </bpmndi:BPMNLabel>
+        </bpmndi:BPMNShape>
+        <bpmndi:BPMNShape id="Activity_09r5ky2_di" bpmnElement="eca_warning_message_09r5ky2">
+          <dc:Bounds x="180" y="-200" width="100" height="80" />
+          <bpmndi:BPMNLabel />
+        </bpmndi:BPMNShape>
+        <bpmndi:BPMNShape id="Activity_0s7z8ey_di" bpmnElement="eca_error_message_0s7z8ey">
+          <dc:Bounds x="50" y="110" width="100" height="80" />
+          <bpmndi:BPMNLabel />
+        </bpmndi:BPMNShape>
+        <bpmndi:BPMNEdge id="Flow_1n67cv1_di" bpmnElement="Flow_1n67cv1">
+          <di:waypoint x="-62" y="150" />
+          <di:waypoint x="50" y="150" />
+        </bpmndi:BPMNEdge>
+        <bpmndi:BPMNEdge id="Flow_1m5kiwr_di" bpmnElement="Flow_1m5kiwr">
+          <di:waypoint x="-62" y="-160" />
+          <di:waypoint x="180" y="-160" />
+        </bpmndi:BPMNEdge>
+      </bpmndi:BPMNPlane>
+    </bpmndi:BPMNDiagram>
+  </bpmn2:definitions>

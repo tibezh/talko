@@ -1,0 +1,76 @@
+uuid: 99daa16b-d814-429e-b1e8-a9d8a526e700
+langcode: uk
+status: true
+dependencies: {  }
+id: eca_bpmn_io_process_fykdpan
+data: |
+  <?xml version="1.0" encoding="UTF-8"?>
+  <bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:qa="http://some-company/schema/bpmn/qa" id="sample-diagram" targetNamespace="http://bpmn.io/schema/bpmn" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
+    <bpmn2:process id="Process_fykDPAn" name="" isExecutable="true" camunda:versionTag="">
+      <bpmn2:documentation />
+      <bpmn2:extensionElements>
+        <camunda:properties>
+          <camunda:property name="Tags" value="" />
+          <camunda:property name="Changelog" value="" />
+        </camunda:properties>
+      </bpmn2:extensionElements>
+      <bpmn2:startEvent id="form__form_submit_1_1" name="Submit form" camunda:modelerTemplate="org.drupal.event.form:form_submit">
+        <bpmn2:extensionElements>
+          <camunda:field name="form_ids">
+            <camunda:string></camunda:string>
+          </camunda:field>
+          <camunda:field name="entity_type_id">
+            <camunda:string></camunda:string>
+          </camunda:field>
+          <camunda:field name="bundle">
+            <camunda:string></camunda:string>
+          </camunda:field>
+          <camunda:field name="operation">
+            <camunda:string></camunda:string>
+          </camunda:field>
+          <camunda:properties>
+            <camunda:property name="pluginid" value="form:form_submit" />
+          </camunda:properties>
+        </bpmn2:extensionElements>
+        <bpmn2:outgoing>Flow_11tgiz4</bpmn2:outgoing>
+      </bpmn2:startEvent>
+      <bpmn2:task id="eca_write_log_message_0sdv9s6" name="Log Message" camunda:modelerTemplate="org.drupal.action.eca_write_log_message">
+        <bpmn2:extensionElements>
+          <camunda:field name="channel">
+            <camunda:string>form_submit</camunda:string>
+          </camunda:field>
+          <camunda:field name="severity">
+            <camunda:string>6</camunda:string>
+          </camunda:field>
+          <camunda:field name="message">
+            <camunda:string>tttt</camunda:string>
+          </camunda:field>
+          <camunda:properties>
+            <camunda:property name="pluginid" value="eca_write_log_message" />
+          </camunda:properties>
+        </bpmn2:extensionElements>
+        <bpmn2:incoming>Flow_11tgiz4</bpmn2:incoming>
+      </bpmn2:task>
+      <bpmn2:sequenceFlow id="Flow_11tgiz4" sourceRef="form__form_submit_1_1" targetRef="eca_write_log_message_0sdv9s6" />
+    </bpmn2:process>
+    <bpmndi:BPMNDiagram id="BPMNDiagram_Process_fykDPAn">
+      <bpmndi:BPMNPlane id="BPMNPlane_Process_fykDPAn" bpmnElement="Process_fykDPAn">
+        <bpmndi:BPMNShape id="Event_0ezcof0_di" bpmnElement="form__form_submit_1_1">
+          <dc:Bounds x="302" y="272" width="36" height="36" />
+          <bpmndi:BPMNLabel>
+            <dc:Bounds x="290" y="315" width="60" height="14" />
+          </bpmndi:BPMNLabel>
+        </bpmndi:BPMNShape>
+        <bpmndi:BPMNShape id="Activity_0sdv9s6_di" bpmnElement="eca_write_log_message_0sdv9s6">
+          <dc:Bounds x="640" y="270" width="100" height="80" />
+          <bpmndi:BPMNLabel />
+        </bpmndi:BPMNShape>
+        <bpmndi:BPMNEdge id="Flow_11tgiz4_di" bpmnElement="Flow_11tgiz4">
+          <di:waypoint x="338" y="290" />
+          <di:waypoint x="489" y="290" />
+          <di:waypoint x="489" y="310" />
+          <di:waypoint x="640" y="310" />
+        </bpmndi:BPMNEdge>
+      </bpmndi:BPMNPlane>
+    </bpmndi:BPMNDiagram>
+  </bpmn2:definitions>
